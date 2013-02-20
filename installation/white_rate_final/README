@@ -1,0 +1,185 @@
+#
+# Copyright 2005, 2006 Free Software Foundation, Inc.
+# 
+# This file is part of GNU Radio
+# 
+# GNU Radio is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 3, or (at your option)
+# any later version.
+# 
+# GNU Radio is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+# 
+# You should have received a copy of the GNU General Public License
+# along with GNU Radio; see the file COPYING.  If not, write to
+# the Free Software Foundation, Inc., 51 Franklin Street,
+# Boston, MA 02110-1301, USA.
+# 
+
+PROJECT DESCRIPTION:
+####################
+
+WhiteRate is a channel width and MCS adaptation protocol for the 
+flexible OFDM system. 
+
+PREREQUISITES:
+############
+
+WhiteRate requires some custom blocks from gr-trellis and gnuradio-core.
+Make sure that those are installed first. The files can be found in 
+gnuradio_patch directory
+
+COMPILATION:
+############
+
+This package requires that gnuradio is already installed. 
+Take note of GNURADIO_HOME directory and run:
+
+  $ ./bootstrap
+  $ ./configure --prefix=GNURADIO_HOME
+  $ make
+
+INSTALLATION:
+#############
+
+  $ sudo make install
+
+USAGE:
+######
+
+In src/examples directory:
+
+  $ ./running.py -f 694.01M --rx-gain=20 --rx-port=3002 -r 200000 (at the receiver)
+  $ ./running.py -f 694M --sender --tx-gain=20 --spacing=0.5 --rx-port=3000 --ack-timeout=1 -r 200000 (at the transmitter)
+
+or if you just want to test the link:
+  $ ./coded_ofdm_loopback_usrps_rx.py --occupied-tones-sender=468 --tone-map-sender=000000000000000000000000000000fffffffffffffffffffffffffffC03fffffffffffffffffffffffffff00000000000000000000000000000f --modulation-pkt-sender=bpsk --occupied-tones-recv=104 --tone-map-recv=ffffffffffff00ffffffffffff --modulation-pkt-recv=bpsk --fft-length=512 -f 694.01M --rx-gain=20 -r 200000 --width-map=0111110
+  $ ./coded_ofdm_loopback_usrps_tx.py --occupied-tones-sender=468 --tone-map-sender=000000000000000000000000000000fffffffffffffffffffffffffffC03fffffffffffffffffffffffffff00000000000000000000000000000f --modulation-pkt-sender=bpsk --occupied-tones-recv=104 --tone-map-recv=ffffffffffff00ffffffffffff --modulation-pkt-recv=bpsk --fft-length=512 --spacing=0.1  --runtime=10 -s 95 -f 694M --sender --tx-gain=20 -r 200000 --width-map=1011010
+
+
+Options:
+  -h, --help            show this help message and exit
+  -t RUNTIME, --runtime=RUNTIME
+  -s SIZE, --size=SIZE  set packet size [default=95]
+  -p SPACING, --spacing=SPACING
+                        set packet spacing in time [default=1]
+  --sample_rate=SAMPLE_RATE
+                        limit sample rate to RATE in throttle (500000)
+  --discontinuous       enable discontinuous mode
+  --snr=SNR             set the SNR of the channel in dB [default=30]
+  --sender              
+  --tx-ip=TX_IP         Trasmitter's IP, needed for over-Ethernet-ACKs
+                        [default=128.111.52.68]
+  --rx-ip=RX_IP         Receiver's IP, needed for over-Ethernet-ACKs
+                        [default=128.111.52.67]
+  --rx-port=RX_PORT     Receiver's listening port, needed for over-Ethernet-
+                        ACKs [default=2727]
+  --ack-timeout=ACK_TIMEOUT
+                        ACK timeout in seconds [default=1]
+  -f FREQ, --freq=FREQ  set Tx and/or Rx frequency to FREQ [default=none]
+  --tx-amplitude=AMPL   set transmitter digital amplitude: 0 <= AMPL < 1
+                        [default=0.25]
+  -v, --verbose         
+  --modulation-pkt-sender=MODULATION_PKT_SENDER
+                        set pkt modulation type [default=qam64]
+  --modulation-base-sender=MODULATION_BASE_SENDER
+                        set base modulation type [default=bpsk]
+  --modulation-pkt-recv=MODULATION_PKT_RECV
+                        set pkt modulation type [default=bpsk]
+  --modulation-base-recv=MODULATION_BASE_RECV
+                        set base modulation type [default=bpsk]
+
+  Expert:
+    --tx-freq=FREQ      set transmit frequency to FREQ [default=none]
+    -S SAMPLES_PER_SYMBOL, --samples-per-symbol=SAMPLES_PER_SYMBOL
+                        set samples/symbol [default=2]
+    --log               Log all parts of flow graph to files (CAUTION: lots of
+                        data)
+    --rx-freq=FREQ      set Rx frequency to FREQ [default=none]
+    --scale-sender=SCALE_SENDER
+                        set the power allocation over subcarriers
+                        [default=const]
+    --scale-recv=SCALE_RECV
+                        set the power allocation over subcarriers
+                        [default=const]
+    --tone-map-sender=TONE_MAP_SENDER
+                        set the mask of data carriers [default=]
+    --occupied-tones-sender=OCCUPIED_TONES_SENDER
+                        set the number of occupied FFT bins [default=468]
+    --nc-filter-sender  
+    --tone-map-recv=TONE_MAP_RECV
+                        set the mask of data carriers [default=]
+    --occupied-tones-recv=OCCUPIED_TONES_RECV
+                        set the number of occupied FFT bins [default=468]
+    --nc-filter-recv    
+    --fsm=FSM           set the fsm for channel coding
+                        [default=fsm_files/awgn1o2_4.fsm]
+    --cp-length=CP_LENGTH
+                        set the number of bits in the cyclic prefix
+                        [default=128]
+    --fft-length=FFT_LENGTH
+                        set the number of FFT bins [default=512]
+
+  General USRP Options:
+    --tx-gain=GAIN      set transmitter gain in dB [default=midpoint].  See
+                        also --show-tx-gain-range
+    --show-tx-gain-range
+                        print min and max Tx gain available on selected
+                        daughterboard
+    -i INTERP, --interp=INTERP
+                        set fpga interpolation rate to INTERP [default=none]
+    -u USRPX, --usrpx=USRPX
+                        specify which usrp model: 1 for USRP, 2 for USRP2
+                        [default=auto]
+    --lo-offset=LO_OFFSET
+                        set LO Offset in Hz [default=automatic].
+    --rx-gain=GAIN      set receiver gain in dB [default=midpoint].  See also
+                        --show-rx-gain-range
+    --show-rx-gain-range
+                        print min and max Rx gain available on selected
+                        daughterboard
+    -d DECIM, --decim=DECIM
+                        set fpga decimation rate to DECIM [default=none]
+
+  USRP1 Specific Options:
+    -T TX_SUBDEV_SPEC, --tx-subdev-spec=TX_SUBDEV_SPEC
+                        select USRP Rx side A or B
+    -w WHICH, --which=WHICH
+                        select USRP board [default=0]
+    -R RX_SUBDEV_SPEC, --rx-subdev-spec=RX_SUBDEV_SPEC
+                        select USRP Rx side A or B
+
+  USRP1 Expert Options:
+    -B FUSB_BLOCK_SIZE, --fusb-block-size=FUSB_BLOCK_SIZE
+                        specify fast usb block size [default=0]
+    -N FUSB_NBLOCKS, --fusb-nblocks=FUSB_NBLOCKS
+                        specify number of fast usb blocks [default=0]
+
+  USRP2 Specific Options:
+    -e INTERFACE, --interface=INTERFACE
+                        Use USRP2 at specified Ethernet interface
+                        [default=eth0]
+    -a MAC_ADDR, --mac-addr=MAC_ADDR
+                        Use USRP2 at specified MAC address [default=None]
+
+  UHD Specific Options:
+    --ip-addr=IP_ADDR   Use UHD at specified IP address
+                        [default=[addr=192.168.10.2]]
+    -r SAMPLE_RATE, --sample-rate=SAMPLE_RATE
+                        sample rate
+    -b BANDWIDTH, --bandwidth=BANDWIDTH
+                        bandwidth used
+
+
+EXAMPLE USAGE:
+##############
+
+
+
+TODO:
+#####
+
+

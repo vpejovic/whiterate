@@ -1,0 +1,226 @@
+>>> gr_fir_ccf: using E
+>>> gr_fir_fff: using E
+gr_buffer::allocate_buffer: warning: tried to allocate
+   30 items of size 2160. Due to alignment requirements
+   256 were allocated.  If this isn't OK, consider padding
+   your structure to a power-of-two bytes.
+   On this platform, our allocation granularity is 4096 bytes.
+3998	 10	 10	 0	 478.894072	 -1	 0.000000	 6.857182
+3001	 7	 7	 0	 424.927993	 -1	 0.000000	 1.071675
+3948	 11	 11	 0	 455.051857	 -1	 0.000000	 2.444201
+3644	 11	 11	 0	 474.445069	 -1	 0.000000	 2.308117
+3171	 11	 11	 0	 445.746233	 -1	 0.000000	 1.628804
+1170	 15	 15	 0	 418.742400	 -1	 0.000000	 2.741340
+103	 9	 9	 0	 450.339754	 -1	 0.000000	 2.658787
+3397	 13	 13	 0	 373.947688	 -1	 0.000000	 5.002368
+1443	 11	 11	 0	 457.684721	 -1	 0.000000	 1.645552
+1911	 7	 7	 0	 430.526870	 -1	 0.000000	 9.534934
+4021	 11	 11	 0	 436.058222	 -1	 0.000000	 1.764524
+3081	 11	 11	 0	 447.797299	 -1	 0.000000	 2.030617
+>>> gr_fir_ccf: using E
+>>> gr_fir_fff: using E
+gr_buffer::allocate_buffer: warning: tried to allocate
+   30 items of size 2160. Due to alignment requirements
+   256 were allocated.  If this isn't OK, consider padding
+   your structure to a power-of-two bytes.
+   On this platform, our allocation granularity is 4096 bytes.
+2334	 5	 5	 0	 408.986325	 -1	 0.000000	 7.849910
+3948	 11	 11	 0	 470.123338	 -1	 0.000000	 1.846577
+2641	 9	 9	 0	 441.789859	 -1	 0.000000	 1.996809
+3941	 3	 3	 0	 486.642931	 -1	 0.000000	 2.311089
+3868	 11	 11	 0	 475.472803	 -1	 0.000000	 2.163793
+803	 7	 7	 0	 421.826848	 -1	 0.000000	 9.892873
+5	 7	 7	 0	 435.384388	 -1	 0.000000	 2.409367
+55	 15	 15	 0	 397.525173	 -1	 0.000000	 5.685177
+3327	 3	 3	 0	 467.836404	 -1	 0.000000	 1.860950
+1226	 15	 15	 0	 471.218273	 -1	 0.000000	 5.867504
+1170	 13	 13	 0	 441.878452	 -1	 0.000000	 5.683675
+4023	 7	 7	 0	 391.957941	 -1	 0.000000	 2.326013
+>>> gr_fir_ccf: using E
+>>> gr_fir_fff: using E
+gr_buffer::allocate_buffer: warning: tried to allocate
+   30 items of size 2160. Due to alignment requirements
+   256 were allocated.  If this isn't OK, consider padding
+   your structure to a power-of-two bytes.
+   On this platform, our allocation granularity is 4096 bytes.
+41	 9	 9	 0	 444.368517	 -1	 0.000000	 2.234268
+3904	 9	 9	 0	 445.883564	 -1	 0.000000	 2.076767
+3368	 3	 3	 0	 485.426999	 -1	 0.000000	 2.162327
+3863	 3	 3	 0	 486.333608	 -1	 0.000000	 2.015780
+2542	 10	 10	 0	 485.746180	 -1	 0.000000	 2.063370
+960	 13	 13	 0	 406.947876	 -1	 0.000000	 1.150465
+2572	 9	 9	 0	 429.085806	 -1	 0.000000	 2.098894
+2934	 15	 15	 0	 442.228027	 -1	 0.000000	 2.926547
+317	 9	 9	 0	 451.420356	 -1	 0.000000	 1.854671
+3351	 7	 7	 0	 386.177233	 -1	 0.000000	 2.117646
+3331	 3	 3	 0	 487.300688	 -1	 0.000000	 2.325478
+444	 9	 9	 0	 462.546973	 -1	 0.000000	 2.088552
+93	 9	 9	 0	 474.271216	 -1	 0.000000	 2.264235
+3671	 10	 10	 0	 485.675859	 -1	 0.000000	 4.266269
+2182	 10	 10	 0	 479.963147	 -1	 0.000000	 2.862710
+3683	 3	 3	 0	 489.239377	 -1	 0.000000	 2.153757
+3327	 3	 3	 0	 486.480000	 -1	 0.000000	 2.243948
+1568	 3	 3	 0	 488.228881	 -1	 0.000000	 4.549056
+29	 9	 9	 0	 487.571250	 -1	 0.000000	 2.134555
+3575	 3	 3	 0	 464.855228	 -1	 0.000000	 2.169167
+1837	 9	 9	 0	 486.546336	 -1	 0.000000	 6.853100
+3439	 3	 3	 0	 450.900748	 -1	 0.000000	 11.217662
+3456	 3	 3	 0	 486.470998	 -1	 0.000000	 2.385684
+>>> gr_fir_ccf: using E
+>>> gr_fir_fff: using E
+gr_buffer::allocate_buffer: warning: tried to allocate
+   30 items of size 2160. Due to alignment requirements
+   256 were allocated.  If this isn't OK, consider padding
+   your structure to a power-of-two bytes.
+   On this platform, our allocation granularity is 4096 bytes.
+41	 9	 9	 0	 441.627209	 -1	 0.000000	 1.975263
+883	 3	 3	 0	 487.405927	 -1	 0.000000	 8.796179
+>>> gr_fir_ccf: using E
+>>> gr_fir_fff: using E
+gr_buffer::allocate_buffer: warning: tried to allocate
+   30 items of size 2160. Due to alignment requirements
+   256 were allocated.  If this isn't OK, consider padding
+   your structure to a power-of-two bytes.
+   On this platform, our allocation granularity is 4096 bytes.
+1505	 3	 3	 0	 486.176088	 -1	 0.000000	 1.888685
+3703	 11	 11	 0	 450.146634	 -1	 0.000000	 2.429434
+3348	 11	 11	 0	 441.868770	 -1	 0.000000	 2.373213
+883	 3	 3	 0	 483.430055	 -1	 0.000000	 5.856675
+3948	 11	 11	 0	 470.902700	 -1	 0.000000	 2.257015
+2641	 9	 9	 0	 478.115610	 -1	 0.000000	 2.204752
+python: trellis_siso_combined_packet.cc:233: virtual int trellis_siso_combined_packet::general_work(int, gr_vector_int&, gr_vector_const_void_star&, gr_vector_void_star&): Assertion `d_flush_input1 >= num_oldinput[1]' failed.
+>>> gr_fir_ccf: using E
+>>> gr_fir_fff: using E
+terminate called after throwing an instance of 'std::invalid_argument'
+  what():  gr_ofdm_demod: Incorrect subcarriers allocated
+>>> gr_fir_ccf: using E
+>>> gr_fir_fff: using E
+gr_buffer::allocate_buffer: warning: tried to allocate
+   30 items of size 2160. Due to alignment requirements
+   256 were allocated.  If this isn't OK, consider padding
+   your structure to a power-of-two bytes.
+   On this platform, our allocation granularity is 4096 bytes.
+178	 10	 10	 0	 477.641456	 -1	 0.000000	 5.931701
+3695	 3	 3	 0	 486.592189	 -1	 0.000000	 1.870374
+464	 7	 7	 0	 411.734837	 -1	 0.000000	 4.873708
+3403	 13	 13	 0	 400.249552	 -1	 0.000000	 11.347243
+136	 10	 10	 0	 219.656016	 -1	 0.000000	 1.758437
+2731	 10	 10	 0	 485.791579	 -1	 0.000000	 1.682413
+2599	 3	 3	 0	 487.253193	 -1	 0.000000	 6.316356
+3051	 3	 3	 0	 485.452471	 -1	 0.000000	 4.008011
+2890	 10	 10	 0	 487.065546	 -1	 0.000000	 9.662256
+520	 3	 3	 0	 486.184646	 -1	 0.000000	 2.714809
+136	 10	 10	 0	 467.527030	 -1	 0.000000	 6.836236
+657	 13	 13	 0	 482.259540	 -1	 0.000000	 5.864042
+2605	 9	 9	 0	 390.698557	 -1	 0.000000	 2.601656
+3956	 3	 3	 0	 461.360088	 -1	 0.000000	 2.684756
+>>> gr_fir_ccf: using E
+>>> gr_fir_fff: using E
+gr_buffer::allocate_buffer: warning: tried to allocate
+   30 items of size 2160. Due to alignment requirements
+   256 were allocated.  If this isn't OK, consider padding
+   your structure to a power-of-two bytes.
+   On this platform, our allocation granularity is 4096 bytes.
+1111	 5	 5	 0	 409.782533	 -1	 0.000000	 3.555628
+1780	 3	 3	 0	 476.970719	 -1	 0.000000	 2.003537
+365	 13	 13	 0	 402.607424	 -1	 0.000000	 2.761111
+2764	 7	 7	 0	 413.385870	 -1	 0.000000	 2.871332
+1142	 7	 7	 0	 418.852645	 -1	 0.000000	 5.293242
+1862	 11	 11	 0	 465.264842	 -1	 0.000000	 3.843890
+2836	 7	 7	 0	 320.670991	 -1	 0.000000	 1.823040
+911	 15	 15	 0	 439.599363	 -1	 0.000000	 3.879625
+2354	 7	 7	 0	 414.392493	 -1	 0.000000	 1.915091
+518	 3	 3	 0	 487.442534	 -1	 0.000000	 4.320237
+1294	 13	 13	 0	 414.199330	 -1	 0.000000	 4.070714
+>>> gr_fir_ccf: using E
+>>> gr_fir_fff: using E
+gr_buffer::allocate_buffer: warning: tried to allocate
+   30 items of size 2160. Due to alignment requirements
+   256 were allocated.  If this isn't OK, consider padding
+   your structure to a power-of-two bytes.
+   On this platform, our allocation granularity is 4096 bytes.
+2149	 10	 10	 0	 479.028126	 -1	 0.000000	 1.957212
+2932	 13	 13	 0	 359.657334	 -1	 0.000000	 1.482222
+3257	 10	 10	 0	 477.908858	 -1	 0.000000	 1.968738
+3479	 11	 11	 0	 451.567928	 -1	 0.000000	 1.808624
+2003	 3	 3	 0	 470.284659	 -1	 0.000000	 4.555366
+2095	 5	 5	 0	 435.499705	 -1	 0.000000	 3.702711
+1327	 10	 10	 0	 470.777802	 -1	 0.000000	 5.647218
+2979	 13	 13	 0	 380.656022	 -1	 0.000000	 3.514661
+1084	 7	 7	 0	 415.097979	 -1	 0.000000	 3.780341
+440	 11	 11	 0	 460.208367	 -1	 0.000000	 4.410398
+3038	 10	 10	 0	 478.419384	 -1	 0.000000	 3.125855
+3735	 11	 11	 0	 449.386265	 -1	 0.000000	 2.041393
+2312	 9	 9	 0	 451.356106	 -1	 0.000000	 9.422900
+2468	 15	 15	 0	 393.930968	 -1	 0.000000	 3.149588
+3753	 11	 11	 0	 454.986877	 -1	 0.000000	 4.916292
+1570	 11	 11	 0	 462.961045	 -1	 0.000000	 3.194583
+>>> gr_fir_ccf: using E
+>>> gr_fir_fff: using E
+gr_buffer::allocate_buffer: warning: tried to allocate
+   30 items of size 2160. Due to alignment requirements
+   256 were allocated.  If this isn't OK, consider padding
+   your structure to a power-of-two bytes.
+   On this platform, our allocation granularity is 4096 bytes.
+311	 5	 5	 0	 419.537344	 -1	 0.000000	 4.145568
+1865	 7	 7	 0	 189.610729	 -1	 0.000000	 3.412219
+3951	 3	 3	 0	 485.263822	 -1	 0.000000	 3.465117
+3484	 11	 11	 0	 470.532805	 -1	 0.000000	 2.030411
+2361	 7	 7	 0	 436.525384	 -1	 0.000000	 3.604616
+3100	 11	 11	 0	 435.439056	 -1	 0.000000	 1.958455
+1085	 11	 11	 0	 473.805736	 -1	 0.000000	 6.981399
+1024	 7	 7	 0	 424.110834	 -1	 0.000000	 6.740057
+2178	 7	 7	 0	 423.816964	 -1	 0.000000	 4.945280
+512	 10	 10	 0	 482.848897	 -1	 0.000000	 2.552868
+1478	 5	 5	 0	 484.480615	 -1	 0.000000	 5.986480
+3735	 11	 11	 0	 420.252693	 -1	 0.000000	 2.349795
+995	 9	 9	 0	 460.390251	 -1	 0.000000	 4.993480
+3895	 11	 11	 0	 446.503409	 -1	 0.000000	 2.137254
+1342	 3	 3	 0	 493.900599	 -1	 0.000000	 9.023411
+408	 15	 15	 0	 437.205206	 -1	 0.000000	 2.060931
+>>> gr_fir_ccf: using E
+>>> gr_fir_fff: using E
+terminate called after throwing an instance of 'std::invalid_argument'
+  what():  gr_ofdm_demod: Incorrect subcarriers allocated
+>>> gr_fir_ccf: using E
+>>> gr_fir_fff: using E
+gr_buffer::allocate_buffer: warning: tried to allocate
+   30 items of size 2160. Due to alignment requirements
+   256 were allocated.  If this isn't OK, consider padding
+   your structure to a power-of-two bytes.
+   On this platform, our allocation granularity is 4096 bytes.
+3358	 10	 10	 0	 472.477018	 -1	 0.000000	 5.992398
+3358	 10	 10	 0	 474.958674	 -1	 0.000000	 9.724464
+3875	 3	 3	 0	 488.989900	 -1	 0.000000	 2.101600
+3317	 13	 13	 0	 371.931568	 -1	 0.000000	 2.301839
+1131	 15	 15	 0	 400.807483	 -1	 0.000000	 6.273748
+3766	 15	 15	 0	 405.170815	 -1	 0.000000	 5.096202
+>>> gr_fir_ccf: using E
+>>> gr_fir_fff: using E
+gr_buffer::allocate_buffer: warning: tried to allocate
+   30 items of size 2160. Due to alignment requirements
+   256 were allocated.  If this isn't OK, consider padding
+   your structure to a power-of-two bytes.
+   On this platform, our allocation granularity is 4096 bytes.
+3853	 7	 7	 0	 461.671543	 -1	 0.000000	 2.304825
+3831	 5	 5	 0	 421.718453	 -1	 0.000000	 5.597418
+1746	 9	 9	 0	 456.352543	 -1	 0.000000	 4.384470
+3643	 9	 9	 0	 447.174770	 -1	 0.000000	 12.977033
+155	 15	 15	 0	 409.500657	 -1	 0.000000	 2.538959
+3998	 10	 10	 0	 473.137118	 -1	 0.000000	 12.996271
+>>> gr_fir_ccf: using E
+>>> gr_fir_fff: using E
+gr_buffer::allocate_buffer: warning: tried to allocate
+   30 items of size 2160. Due to alignment requirements
+   256 were allocated.  If this isn't OK, consider padding
+   your structure to a power-of-two bytes.
+   On this platform, our allocation granularity is 4096 bytes.
+739	 3	 3	 0	 489.888702	 -1	 0.000000	 6.900914
+2681	 9	 9	 0	 461.983471	 -1	 0.000000	 4.137464
+2567	 10	 10	 0	 467.567228	 -1	 0.000000	 7.685860
+375	 3	 3	 0	 493.539308	 -1	 0.000000	 1.793810
+1460	 5	 5	 0	 460.579667	 -1	 0.000000	 1.993636
+923	 11	 11	 0	 355.959759	 -1	 0.000000	 8.939673
+455	 15	 15	 0	 455.496216	 -1	 0.000000	 3.194112
+638	 3	 3	 0	 471.799804	 -1	 0.000000	 2.398798
+1747	 11	 11	 0	 478.411717	 -1	 0.000000	 3.072067
